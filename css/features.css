@@ -1,0 +1,214 @@
+/* ============================================================
+   features.css — 기능 소개 섹션 (Feature 1 & 2)
+   ============================================================ */
+
+.feature {
+    padding: 120px 24px;
+}
+
+.feature-alt {
+    background: var(--light);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Feature 2: 좌우 반전 */
+.feature-grid-reverse {
+    direction: rtl;
+}
+
+.feature-grid-reverse>* {
+    direction: ltr;
+}
+
+.feature-title {
+    font-family: var(--font-serif);
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.feature-desc {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 36px;
+    max-width: 440px;
+}
+
+/* ── 공통 Feature 카드 ── */
+.feature-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    padding: 28px;
+    border: 1px solid var(--light-2);
+}
+
+/* ── Feature 1: 인사이트 카드 ── */
+.insight-header,
+.challenge-header {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.insight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.insight-box {
+    padding: 16px;
+    background: var(--light);
+    border-radius: var(--radius-md);
+}
+
+.insight-box.highlight {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.insight-box.highlight .insight-label {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.insight-box.highlight .insight-value {
+    color: var(--white);
+}
+
+.insight-box.positive .insight-value {
+    color: #2ecc71;
+    font-weight: 700;
+}
+
+.insight-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.insight-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.insight-tip {
+    font-size: 13px;
+    color: var(--text-muted);
+    background: var(--light);
+    padding: 12px 16px;
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--primary);
+    line-height: 1.6;
+}
+
+/* ── Feature 2: 챌린지 카드 ── */
+.challenge-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.challenge-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: var(--radius-sm);
+    background: var(--light);
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.challenge-item.done {
+    background: rgba(217, 119, 87, 0.08);
+    color: var(--dark);
+}
+
+.challenge-item.active {
+    background: rgba(217, 119, 87, 0.15);
+    color: var(--dark);
+    font-weight: 600;
+    border: 1.5px solid rgba(217, 119, 87, 0.4);
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.check-empty {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--light-2);
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--text-light);
+}
+
+.progress-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.progress-label strong {
+    color: var(--primary);
+}
+
+.progress-bar {
+    height: 6px;
+    background: var(--light-2);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 99px;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .feature-grid,
+    .feature-grid-reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+
+    .feature-card {
+        max-width: 440px;
+        margin: 0 auto;
+    }
+}

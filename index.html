@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +8,20 @@
   <meta name="description" content="스마트폰과 앱 사용 습관을 분석하고, 건강한 디지털 생활을 만들어드립니다. DetoxDay와 함께 시작하세요." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Pretendard:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- CSS: 섹션별 분리 -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/announcement.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/stats.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/cta.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 </head>
+
 <body>
 
   <!-- Announcement Bar -->
@@ -71,22 +83,30 @@
           <div class="screen-bar-list">
             <div class="screen-bar-item">
               <span class="app-name">Instagram</span>
-              <div class="bar-wrap"><div class="bar" style="width: 82%; background: #D97757;"></div></div>
+              <div class="bar-wrap">
+                <div class="bar" style="width: 82%; background: #D97757;"></div>
+              </div>
               <span class="app-time">3h 12m</span>
             </div>
             <div class="screen-bar-item">
               <span class="app-name">YouTube</span>
-              <div class="bar-wrap"><div class="bar" style="width: 65%; background: #E8916F;"></div></div>
+              <div class="bar-wrap">
+                <div class="bar" style="width: 65%; background: #E8916F;"></div>
+              </div>
               <span class="app-time">2h 33m</span>
             </div>
             <div class="screen-bar-item">
               <span class="app-name">TikTok</span>
-              <div class="bar-wrap"><div class="bar" style="width: 45%; background: #C05E3A;"></div></div>
+              <div class="bar-wrap">
+                <div class="bar" style="width: 45%; background: #C05E3A;"></div>
+              </div>
               <span class="app-time">1h 46m</span>
             </div>
             <div class="screen-bar-item">
               <span class="app-name">KakaoTalk</span>
-              <div class="bar-wrap"><div class="bar" style="width: 28%; background: #D97757; opacity:0.5;"></div></div>
+              <div class="bar-wrap">
+                <div class="bar" style="width: 28%; background: #D97757; opacity:0.5;"></div>
+              </div>
               <span class="app-time">1h 05m</span>
             </div>
           </div>
@@ -189,7 +209,9 @@
           </div>
           <div class="challenge-progress">
             <div class="progress-label">오늘의 달성률 <strong>50%</strong></div>
-            <div class="progress-bar"><div class="progress-fill" style="width: 50%"></div></div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 50%"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -264,6 +286,11 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <!-- JS: 기능별 분리 -->
+  <script src="js/announcement.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/counter.js"></script>
 </body>
+
 </html>
