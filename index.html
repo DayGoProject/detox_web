@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DetoxDay — 디지털 중독에서 자유롭게</title>
+  <meta name="description" content="스마트폰과 앱 사용 습관을 분석하고, 건강한 디지털 생활을 만들어드립니다. DetoxDay와 함께 시작하세요." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <span>✦ 2,000명이 첫 주에 스크린 타임을 40% 줄였습니다.</span>
+    <a href="#" class="announcement-link">지금 시작하기 →</a>
+    <button class="announcement-close" id="announcement-close" aria-label="닫기">✕</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <span class="nav-logo-icon">◆</span>
+        <span class="nav-logo-text">DetoxDay</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#features" class="nav-link">기능</a></li>
+        <li><a href="#stats" class="nav-link">효과</a></li>
+        <li><a href="#how" class="nav-link">사용법</a></li>
+        <li><a href="#" class="nav-link">요금제</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="nav-login">로그인</a>
+        <a href="#" class="btn btn-dark" id="nav-cta">무료로 시작하기</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <span class="section-label reveal">디지털 웰니스 플랫폼</span>
+      <h1 class="hero-title reveal reveal-delay-1">
+        디지털 중독에서<br />
+        <em>자유로워지세요</em>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        스마트폰 사용 습관을 분석하고, 나만을 위한 디톡스 플랜을 제공합니다.<br />
+        단 7일이면 달라진 나를 만날 수 있어요.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#" class="btn btn-primary" id="hero-cta-primary">무료로 시작하기</a>
+        <a href="#features" class="btn btn-ghost" id="hero-cta-ghost">더 알아보기</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal reveal-delay-2">
+      <div class="hero-card" id="hero-card">
+        <div class="card-header">
+          <span class="card-dot red"></span>
+          <span class="card-dot yellow"></span>
+          <span class="card-dot green"></span>
+          <span class="card-title-small">오늘의 스크린 타임</span>
+        </div>
+        <div class="card-body">
+          <div class="screen-bar-list">
+            <div class="screen-bar-item">
+              <span class="app-name">Instagram</span>
+              <div class="bar-wrap"><div class="bar" style="width: 82%; background: #D97757;"></div></div>
+              <span class="app-time">3h 12m</span>
+            </div>
+            <div class="screen-bar-item">
+              <span class="app-name">YouTube</span>
+              <div class="bar-wrap"><div class="bar" style="width: 65%; background: #E8916F;"></div></div>
+              <span class="app-time">2h 33m</span>
+            </div>
+            <div class="screen-bar-item">
+              <span class="app-name">TikTok</span>
+              <div class="bar-wrap"><div class="bar" style="width: 45%; background: #C05E3A;"></div></div>
+              <span class="app-time">1h 46m</span>
+            </div>
+            <div class="screen-bar-item">
+              <span class="app-name">KakaoTalk</span>
+              <div class="bar-wrap"><div class="bar" style="width: 28%; background: #D97757; opacity:0.5;"></div></div>
+              <span class="app-time">1h 05m</span>
+            </div>
+          </div>
+          <div class="card-total">
+            <span>총 스크린 타임</span>
+            <strong>8h 36m</strong>
+          </div>
+          <div class="card-badge">⚠️ 목표보다 3시간 초과</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <h2 class="section-title reveal">DetoxDay와 함께라면</h2>
+      <p class="section-sub reveal">DetoxDay를 사용한 이용자들의 실제 결과입니다</p>
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="87">0</span><span class="stat-unit">%</span>
+          <p class="stat-desc">스크린 타임<br />30% 이상 감소</p>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <span class="stat-number" data-target="3">0</span><span class="stat-unit">.2×</span>
+          <p class="stat-desc">수면의 질<br />개선 효과</p>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <span class="stat-number" data-target="94">0</span><span class="stat-unit">%</span>
+          <p class="stat-desc">집중력<br />향상 경험</p>
+        </div>
+      </div>
+      <div class="stats-cta reveal reveal-delay-3">
+        <a href="#" class="btn btn-dark" id="stats-cta">플랜 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Section 1 -->
+  <section class="feature" id="features">
+    <div class="container feature-grid">
+      <div class="feature-text reveal">
+        <span class="section-label">데이터 분석</span>
+        <h2 class="feature-title">내 습관을 정확하게<br />파악해드립니다</h2>
+        <p class="feature-desc">
+          앱별 사용 시간, 접속 빈도, 취침 전 사용 패턴까지 — DetoxDay가 모든 데이터를 분석해 나에게 꼭 맞는 인사이트를 제공합니다.
+        </p>
+        <a href="#" class="btn btn-primary" id="feature1-cta">무료로 분석 시작</a>
+      </div>
+      <div class="feature-visual reveal reveal-delay-1">
+        <div class="feature-card" id="feature-card-1">
+          <div class="insight-header">📊 주간 리포트</div>
+          <div class="insight-grid">
+            <div class="insight-box highlight">
+              <div class="insight-label">이번 주</div>
+              <div class="insight-value">42h 18m</div>
+            </div>
+            <div class="insight-box">
+              <div class="insight-label">지난 주</div>
+              <div class="insight-value">51h 02m</div>
+            </div>
+            <div class="insight-box">
+              <div class="insight-label">목표</div>
+              <div class="insight-value">28h 00m</div>
+            </div>
+            <div class="insight-box positive">
+              <div class="insight-label">개선율</div>
+              <div class="insight-value">↓ 17%</div>
+            </div>
+          </div>
+          <div class="insight-tip">💡 취침 1시간 전 스마트폰 사용을 줄이면 목표에 더 빨리 도달할 수 있어요.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Section 2 -->
+  <section class="feature feature-alt" id="how">
+    <div class="container feature-grid feature-grid-reverse">
+      <div class="feature-visual reveal">
+        <div class="feature-card" id="feature-card-2">
+          <div class="challenge-header">🎯 오늘의 챌린지</div>
+          <div class="challenge-list">
+            <div class="challenge-item done">
+              <span class="check">✓</span>
+              <span>오전 스마트폰 없이 30분 시작</span>
+            </div>
+            <div class="challenge-item done">
+              <span class="check">✓</span>
+              <span>점심 식사 중 폰 내려놓기</span>
+            </div>
+            <div class="challenge-item active">
+              <span class="check-empty">○</span>
+              <span>SNS 앱 30분 이내로 사용하기</span>
+            </div>
+            <div class="challenge-item">
+              <span class="check-empty">○</span>
+              <span>취침 1시간 전 블루라이트 차단</span>
+            </div>
+          </div>
+          <div class="challenge-progress">
+            <div class="progress-label">오늘의 달성률 <strong>50%</strong></div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 50%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-text reveal reveal-delay-1">
+        <span class="section-label">맞춤 챌린지</span>
+        <h2 class="feature-title">작은 습관이<br />큰 변화를 만듭니다</h2>
+        <p class="feature-desc">
+          AI가 분석한 내 패턴을 바탕으로, 무리하지 않고 실천할 수 있는 일일 챌린지를 제안합니다. 매일 조금씩, 확실하게 변화하세요.
+        </p>
+        <a href="#" class="btn btn-primary" id="feature2-cta">챌린지 시작하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="cta-title reveal">지금 바로 시작하세요</h2>
+      <p class="cta-sub reveal reveal-delay-1">무료로 7일 체험하고, 달라진 나를 직접 확인하세요.</p>
+      <a href="#" class="btn btn-dark" id="cta-banner-btn">무료로 시작하기</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" id="footer-logo">
+          <span class="nav-logo-icon">◆</span>
+          <span class="nav-logo-text">DetoxDay</span>
+        </a>
+        <p class="footer-tagline">건강한 디지털 습관을<br />만들어 드립니다.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">제품</h4>
+        <ul>
+          <li><a href="#">기능 소개</a></li>
+          <li><a href="#">요금제</a></li>
+          <li><a href="#">기업용</a></li>
+          <li><a href="#">다운로드</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">리소스</h4>
+        <ul>
+          <li><a href="#">블로그</a></li>
+          <li><a href="#">연구 자료</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">커뮤니티</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">회사</h4>
+        <ul>
+          <li><a href="#">소개</a></li>
+          <li><a href="#">채용</a></li>
+          <li><a href="#">파트너십</a></li>
+          <li><a href="#">문의</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">법적 고지</h4>
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">쿠키 정책</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DetoxDay. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
