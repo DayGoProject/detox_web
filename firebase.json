@@ -9,7 +9,7 @@
     "providers": {
       "emailPassword": true,
       "googleSignIn": {
-        "oAuthBrandDisplayName": "DetoxDay",
+        "oAuthBrandDisplayName": "Offlo",
         "supportEmail": "ktdevelop18@gmail.com"
       }
     }
