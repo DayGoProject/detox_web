@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Offlo — 사이트 사용 시간 제한",
+    "name": "Offlo",
     "short_name": "Offlo",
     "description": "사이트별 사용 시간을 제한하고, Offlo 정원과 연동해 식물을 키우세요.",
     "version": "1.0.0",
