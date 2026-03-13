@@ -5,22 +5,22 @@ const footerCols = [
     {
         heading: '제품',
         links: ['기능 소개', '요금제', '기업용', '다운로드'],
-        hrefs: ['/#features', '/pricing', '/pricing', '#'],
+        hrefs: ['/#features', '/pricing', '/pricing', '/download'],
     },
     {
         heading: '리소스',
         links: ['블로그', '연구 자료', '자주 묻는 질문', '커뮤니티'],
-        hrefs: ['#', '#', '#', '#'],
+        hrefs: ['/blog', '/research', '/faq', '/community'],
     },
     {
         heading: '회사',
         links: ['소개', '채용', '파트너십', '문의'],
-        hrefs: ['#', '#', '#', '#'],
+        hrefs: ['/about', '/careers', '/partners', '/contact'],
     },
     {
         heading: '법적 고지',
         links: ['이용약관', '개인정보처리방침', '쿠키 정책'],
-        hrefs: ['#', '#', '#'],
+        hrefs: ['/terms', '/privacy', '/cookies'],
     },
 ];
 

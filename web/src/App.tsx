@@ -20,6 +20,20 @@ import GardenPage from './pages/Garden/GardenPage';
 import BadgesPage from './pages/Badges/BadgesPage';
 import PricingPage from './pages/Pricing/PricingPage';
 
+// Footer Pages
+import DownloadPage from './pages/Footer/DownloadPage';
+import BlogPage from './pages/Footer/BlogPage';
+import ResearchPage from './pages/Footer/ResearchPage';
+import FAQPage from './pages/Footer/FAQPage';
+import CommunityPage from './pages/Footer/CommunityPage';
+import AboutPage from './pages/Footer/AboutPage';
+import CareersPage from './pages/Footer/CareersPage';
+import PartnersPage from './pages/Footer/PartnersPage';
+import ContactPage from './pages/Footer/ContactPage';
+import TermsPage from './pages/Footer/TermsPage';
+import PrivacyPage from './pages/Footer/PrivacyPage';
+import CookiesPage from './pages/Footer/CookiesPage';
+
 export default function App() {
     useEffect(() => {
         const unsubscribe = initAuthListener();
@@ -36,6 +50,20 @@ export default function App() {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/signup" element={<SignupPage />} />
                 <Route path="/pricing" element={<PricingPage />} />
+
+                {/* Footer Pages (Public) */}
+                <Route path="/download" element={<DownloadPage />} />
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/research" element={<ResearchPage />} />
+                <Route path="/faq" element={<FAQPage />} />
+                <Route path="/community" element={<CommunityPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/careers" element={<CareersPage />} />
+                <Route path="/partners" element={<PartnersPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/terms" element={<TermsPage />} />
+                <Route path="/privacy" element={<PrivacyPage />} />
+                <Route path="/cookies" element={<CookiesPage />} />
 
                 {/* Protected */}
                 <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
